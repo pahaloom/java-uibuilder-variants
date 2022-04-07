@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" stylesheets="@application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="application.FXCalculatorController">
+   <center>
+      <VBox alignment="TOP_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <TextField id="fieldA" alignment="CENTER_RIGHT" promptText="0" styleClass="numeric" stylesheets="@application.css" />
+            <TextField id="fieldB" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" promptText="0" styleClass="numeric" stylesheets="@application.css" />
+            <ChoiceBox id="chooseOp" prefWidth="150.0" styleClass="numeric" stylesheets="@application.css" />
+            <TextField id="fieldC" alignment="CENTER_RIGHT" editable="false" styleClass="numeric" stylesheets="@application.css" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
