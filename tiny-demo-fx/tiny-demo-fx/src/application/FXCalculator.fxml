@@ -5,15 +5,14 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" stylesheets="@application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="application.FXCalculatorController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXCalculatorController">
    <center>
       <VBox alignment="TOP_RIGHT" BorderPane.alignment="CENTER">
          <children>
-            <TextField id="fieldA" alignment="CENTER_RIGHT" promptText="0" styleClass="numeric" stylesheets="@application.css" />
-            <TextField id="fieldB" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" promptText="0" styleClass="numeric" stylesheets="@application.css" />
-            <ChoiceBox id="chooseOp" prefWidth="150.0" styleClass="numeric" stylesheets="@application.css" />
-            <TextField id="fieldC" alignment="CENTER_RIGHT" editable="false" styleClass="numeric" stylesheets="@application.css" />
+            <TextField id="fieldA" fx:id="valA" alignment="CENTER_RIGHT" promptText="0" styleClass="numeric" stylesheets="@application.css" />
+            <TextField id="fieldB" fx:id="valB" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" promptText="0" styleClass="numeric" stylesheets="@application.css" />
+            <ChoiceBox id="chooseOp" fx:id="op" prefWidth="150.0" styleClass="numeric" stylesheets="@application.css" />
+            <TextField id="fieldC" fx:id="valC" alignment="CENTER_RIGHT" disable="true" editable="false" styleClass="numeric" stylesheets="@application.css" />
          </children>
       </VBox>
    </center>

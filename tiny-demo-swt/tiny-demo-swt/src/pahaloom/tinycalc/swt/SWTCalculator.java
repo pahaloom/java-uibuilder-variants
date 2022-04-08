@@ -1,3 +1,4 @@
+package pahaloom.tinycalc.swt;
 import org.eclipse.core.databinding.Binding;
 import org.eclipse.core.databinding.DataBindingContext;
 import org.eclipse.core.databinding.UpdateValueStrategy;
@@ -20,8 +21,8 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.wb.swt.SWTResourceManager;
 
-import model.CalculatorViewModelBean;
 import model.CalculatorNumberFormatter;
+import model.CalculatorViewModelBean;
 
 public class SWTCalculator {
 	private Binding ansBinding;

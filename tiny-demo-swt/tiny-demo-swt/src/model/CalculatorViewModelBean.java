@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
 
+import pahaloom.tinycalc.Operation;
+import static pahaloom.tinycalc.Operation.*;
+
 public class CalculatorViewModelBean implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -55,60 +58,5 @@ public class CalculatorViewModelBean implements Serializable {
 
 	public void setAns(Float ans) {
 		this.ans = ans;
-	}
-
-	static abstract class Operation {
-		private final String title;
-
-		Operation(String title) {
-			this.title = title;
-		}
-
-		@Override
-		public String toString() {
-			return title;
-		}
-
-		abstract float operate(int a, int b);
-	}
-
-	static class OpAdd extends Operation {
-		OpAdd() {
-			super("+");
-		}
-
-		float operate(int a, int b) {
-			return a + b;
-		}
-	}
-
-	static class OpSub extends Operation {
-		OpSub() {
-			super("-");
-		}
-
-		float operate(int a, int b) {
-			return (float) a - b;
-		}
-	}
-
-	static class OpMul extends Operation {
-		OpMul() {
-			super("*");
-		}
-
-		float operate(int a, int b) {
-			return (float) a * b;
-		}
-	}
-
-	static class OpDiv extends Operation {
-		OpDiv() {
-			super("/");
-		}
-
-		float operate(int a, int b) {
-			return (float) a / b;
-		}
 	}
 }
