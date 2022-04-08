@@ -1,4 +1,4 @@
-package application;
+package pahaloom.tinyfxapp;
 
 import java.util.Arrays;
 

@@ -3,5 +3,5 @@ module fxcalculator {
 	requires javafx.fxml;
 	requires tinycalculator;
 	
-	opens application to javafx.graphics, javafx.fxml;
+	opens pahaloom.tinyfxapp to javafx.graphics, javafx.fxml;
 }
